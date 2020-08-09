@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js"
+      integrity="sha512-pCPP9sfLW9T7EZiw725jUl+ux032sjGhFE+ZAx00C1iO55ZmZJWpfNGbDf2ZF5b0UqxRqSW548PbZEWmH+S7pA=="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="overlay">
+      <h1>Reindeer</h1>
+      <span>snow life</span>
+    </div>
+    <div class="wrapper">
+      <div class="left-side">
+        <div class="logo">
+          <h1>
+            <span>rein <br />deer</span>
+            <br />
+            snow life
+          </h1>
+        </div>
+        <div class="menu-links">
+          <ul>
+            <li>home.</li>
+            <li>snow life.</li>
+            <li>contact.</li>
+          </ul>
+        </div>
+        <div class="scroll">
+          <p>scroll</p>
+        </div>
+      </div>
+      <div class="text">
+        <div class="title">reindeer</div>
+        <p>
+          Mauris elementum, dui ac sagittis <br />
+          cursus, libero elit sodales odio
+        </p>
+      </div>
+      <div class="watchnow">
+        <i class="fa fa-play"></i>
+        <a href="#">watch now!</a>
+      </div>
+      <div class="ellipse-container">
+        <div class="ellipse thin"></div>
+        <div class="ellipse thick"></div>
+        <div class="ellipse yellow"></div>
+      </div>
+    </div>
+    <script>
+      TweenMax.to(".overlay h1", 2, {
+        opacity: 0,
+        y: -60,
+        ease: Expo.easeInOut,
+      });
+      TweenMax.to(".overlay span", 2, {
+        delay: 0.3,
+        opacity: 0,
+        y: -60,
+        ease: Expo.easeInOut,
+      });
+      TweenMax.to(".overlay", 2, {
+        delay: 1,
+        top: "-100%",
+        ease: Expo.easeInOut,
+      });
+      TweenMax.from(".ellipse-container", 1, {
+        delay: 2,
+        opacity: 0,
+        ease: Expo.easeInOut,
+      });
+      TweenMax.from(".yellow", 1, {
+        delay: 3.5,
+        opacity: 0,
+        ease: Expo.easeInOut,
+      });
+      TweenMax.from(".circle1", 1, {
+        delay: 2.4,
+        opacity: 0,
+        ease: Expo.easeInOut,
+      });
+      TweenMax.from(".circle2", 1, {
+        delay: 2.6,
+        opacity: 0,
+        ease: Expo.easeInOut,
+      });
+      TweenMax.from(".logo", 1, {
+        delay: 2.6,
+        opacity: 0,
+        ease: Expo.easeInOut,
+      });
+      TweenMax.from(".menu-links", 3, {
+        delay: 3,
+        opacity: 0,
+        x: -100,
+        ease: Expo.easeInOut,
+      });
+    </script>
+  </body>
+</html>

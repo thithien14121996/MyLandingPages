@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: "agency fb";
+  background: url("./images/LandingPage1.png") no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.left-side {
+  width: 200px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  flex: 0 0 50%;
+  text-transform: uppercase;
+  background: yellow;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.logo h1 {
+  font-size: 15px;
+  line-height: 1;
+}
+.logo span {
+  font-weight: 500;
+  font-size: 60px;
+}
+
+.menu-links {
+  display: flex;
+  justify-content: flex-end;
+  text-align: right;
+  text-transform: uppercase;
+}
+.menu-links ul {
+  list-style: none;
+  width: 50%;
+}
+.menu-links ul li {
+  padding: 5px;
+  cursor: pointer;
+}
+.menu-links ul li:hover {
+  background-color: #383737;
+  color: white;
+}
+
+.scroll {
+  display: flex;
+  flex: 1;
+  transform: rotate(-90deg);
+  justify-content: center;
+}
+.scroll::before {
+  display: inline-block;
+  content: "";
+  width: 65px;
+  margin: 0 10px 0 0;
+  border-top: 1px solid red;
+  transform: translateY(15px);
+}
+
+.text {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translateY(-50%);
+  text-align: right;
+}
+.text .title {
+  font-size: 130px;
+}
+
+.watchnow {
+  position: absolute;
+  top: 60%;
+  right: 0;
+  transform: translateY(-50%);
+  background: yellow;
+  padding: 20px 150px 20px 10px;
+}
+
+.ellipse-container {
+  width: 608px;
+  height: 608px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+  z-index: -1;
+}
+
+.ellipse {
+  position: absolute;
+  top: 0;
+  border-radius: 50%;
+  border-style: solid;
+}
+
+.ellipse.thin {
+  width: 100%;
+  height: 100%;
+  border-width: 1px;
+  border-color: gray;
+}
+
+.ellipse.thick {
+  width: 95%;
+  height: 95%;
+  border-width: 10px;
+  border-color: white;
+  transform: rotate(-45deg);
+  top: 14px;
+  left: 14px;
+}
+
+.ellipse.yellow {
+  width: 95%;
+  height: 95%;
+  border-width: 10px;
+  border-color: yellow transparent;
+  transform: rotate(-45deg);
+  top: 14px;
+  left: 14px;
+  animation: rotating 5s ease-in-out infinite;
+}
+
+@keyframes rotating {
+  0% {
+    transform: rotate(-45deg);
+  }
+  100% {
+    transform: rotate(135deg);
+  }
+}
+.overlay {
+  position: absolute;
+  z-index: 999;
+  width: 100%;
+  height: 100vh;
+  background: yellow;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+}
+
+/*# sourceMappingURL=style.css.map */
