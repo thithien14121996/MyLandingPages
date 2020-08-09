@@ -10,6 +10,14 @@ html {
   font-size: 10px;
   color: $primary-color;
   font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+  color: white;
+  &:hover {
+    color: $secondary-color;
+  }
 }
 .btn {
   display: inline-block;

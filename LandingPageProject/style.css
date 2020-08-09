@@ -9,6 +9,15 @@ html {
   font-size: 10px;
   color: black;
   font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  color: #eb1164;
 }
 
 .btn {
